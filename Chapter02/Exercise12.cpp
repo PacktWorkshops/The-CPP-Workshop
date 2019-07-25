@@ -17,7 +17,7 @@ int main()
     count = std::stoi(input);
     for (int i = 1; i <= 100; ++i)
     {
-          if (numbersPrinted == count)
+            if (numbersPrinted == count)
     {
         break;
     }
@@ -25,7 +25,9 @@ int main()
     {
         continue;
     }
-std::cout << i << "\n";
-++numbersPrinted;
-  
+    std::cout << i << "\n";
+    ++numbersPrinted;
     }
+}
+
+

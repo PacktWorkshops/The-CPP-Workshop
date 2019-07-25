@@ -1,13 +1,12 @@
-// While loop.
+// Do ... while loop.
 #include <iostream>
 #include <string>
 
 int main()
 {   
-    while (false)
+    do
     {
         std::cout << "Hello World!";
     }
+    while (false);
     
-    return 0;
-}

@@ -1,39 +1,12 @@
-// Arrays exercise.
-#include <iostream>
-#include <string>
-#define NAME_COUNT 5
+#include<iostream>
+using namespace std;
 int main()
 {
-std::string names[NAME_COUNT] {""};
-  std::cout << "Please input usernames." << std::endl;
-for (int i = 0; i < NAME_COUNT; ++i)
-{
-std::cout << "User " << i + 1 << ": ";
-std::getline(std::cin, names[i]);
-}
-  bool bIsRunning = true;
-while (bIsRunning)
-{
-int userIndex = 0;
-std::string inputString = "";
-std::cout << "Enter user-id of user to fetch or -1 to quit: ";
-std::getline(std::cin, inputString);
-userIndex = std::stoi(inputString);
-if (userIndex == -1)
-{
-bIsRunning = false;
-}
-  else
-{
-if (userIndex >= 0 && userIndex < NAME_COUNT)
-{
-std::cout << "User " << userIndex << " = "<<
-names[userIndex] << std::endl;
-}
-else
-{
-std::cout << "Invalid user index" << std::endl;
-}
-}
-}
+int myInt = 1;
+bool myBool = false;
+char myChar = 'a';
+std::cout << "The size of an int is " << sizeof(myInt) << ".\n";
+std::cout << "The size of a bool is " << sizeof(myBool) << ".\n";
+std::cout << "The size of a char is " << sizeof(myChar) << ".\n";
+return 0;
 }

@@ -59,13 +59,4 @@ int main()
     cout << "shutting down" << endl;
     return 0;
 }
-12.	Compile and run the completed program. While different students programs will produce somewhat different output, this program produces the following.
-caught runtime error Sensor glitch
-caught runtime error Sensor glitch
-caught runtime error Sensor glitch
-caught runtime error Sensor glitch
-caught unknown exception type
-SCRAM! I mean it. Get away from here!
-shutting down
-
 

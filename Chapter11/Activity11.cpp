@@ -7,19 +7,19 @@ class Stack
     public:   
         Stack() { init(); } 
         explicit Stack(size_t numElements, const T& initialValue = T()) 
-        {  
+         {  
             init(numElements, initialValue); 
-        } 
+         } 
         Stack(const Stack& q) { init(q.bottom(), q.top()); }
         Stack& operator=(const Stack& rhs)
-        {
+         {
             if (&rhs != this)
-             {
+              {
                 destroy();
                 init(rhs.bottom(), rhs.top());
-             }
+              }
             return *this;
-        }
+         }
 
         ~Stack() { destroy(); }
  

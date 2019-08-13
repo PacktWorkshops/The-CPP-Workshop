@@ -1,4 +1,4 @@
-// If/Else example 1.
+// if/else example 1.
 #include <iostream>
 #include <string>
 

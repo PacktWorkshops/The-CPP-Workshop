@@ -5,9 +5,9 @@ using namespace std;
 class noisy
 {
   char const* s_;
-public:
-  noisy(char const* s) { cout << "constructing " << (s_ = s) << endl; }
-  ~noisy() { cout << "destroying " << s_ << endl; }
+  public:
+    noisy(char const* s) { cout << "constructing " << (s_ = s) << endl; }
+    ~noisy() { cout << "destroying " << s_ << endl; }
 };
 int deeply_nested()
 {

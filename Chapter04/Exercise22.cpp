@@ -1,15 +1,15 @@
 // Time of Day Calculator.
 #include <iostream>
 #include <string>
-int main() {
-    std::cout << "***Time of Day Calculator***\n";
-    std::cout << "Enter time in military format. eg. (1800, 1430)\n\n";
-    std::cout << "Enter time: ";
-    std::string input;
-    getline(std::cin, input);
-    int time = std::stoi(input);
-
-    if (time < 0000 || time > 2400)
+int main() 
+{
+   std::cout << "***Time of Day Calculator***\n";
+   std::cout << "Enter time in military format. eg. (1800, 1430)\n\n";
+   std::cout << "Enter time: ";
+   std::string input;
+   getline(std::cin, input);
+   int time = std::stoi(input);
+   if (time < 0000 || time > 2400)
     {
           std::cout << "Invalid time.";
           return 0; 

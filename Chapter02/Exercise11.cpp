@@ -17,26 +17,24 @@ int main()
         // Get count from user.
         getline(std::cin, input); 
         count = std::stoi(input);
-       // Check if user wants to quit application.
+        // Check if user wants to quit application.
         if (count == 0)
-        {
+          {
             break;
-        }
+          }
         
         // Generate and output random numbers.
         srand((unsigned)time(0));
         for (int i = 0; i < count; ++i)
         {
-            std::cout << rand() % 10;
-            
+            std::cout << rand() % 10;  
             if (i == count - 1)
             {
                 continue; 
             }
             
             std::cout << ", ";
-        }
-        std::cout << "\n\n";
+         }
+       std::cout << "\n\n";
     }
 }
-

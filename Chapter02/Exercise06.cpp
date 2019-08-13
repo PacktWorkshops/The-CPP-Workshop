@@ -1,4 +1,4 @@
-// If/Else exercise – Menu Program
+// if/else exercise – Menu Program
 #include <iostream>
 #include <string>
 

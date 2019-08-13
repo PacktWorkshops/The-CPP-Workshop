@@ -36,5 +36,5 @@ int main()
   delete square;
   square = nullptr;
   delete circle;
- circle = nullptr;
+  circle = nullptr;
 }

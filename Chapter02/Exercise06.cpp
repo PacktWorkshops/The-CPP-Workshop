@@ -30,6 +30,6 @@ int main()
     {
         std::cout << "Invalid choice.";
     }  
-        return 0;
+    return 0;
 }
 

@@ -11,20 +11,16 @@ class Attack
         m_attackStat = attackStat; 
     } 
 
-     
-
     Attack(const Attack& other) 
-
     { 
         m_attackStat = other.m_attackStat; 
         m_name = new char[strlen(other.m_name) + 1]; 
         strcpy(m_name, other.m_name); 
-    } 
-    
+    }     
     Attack& operator=(const Attack& rhs) 
     { 
         if(this != &rhs) 
-        { 
+         { 
             m_attackStat = rhs.m_attackStat;             
             char* newName = new char[strlen(rhs.m_name) + 1]; 
             strcpy(newName, rhs.m_name);            
@@ -33,19 +29,16 @@ class Attack
         }        
         return *this; 
     } 
-
     ~Attack() 
     { 
         delete[] m_name; 
     }    
- 
     int getAttackStat() const { return m_attackStat; } 
     char* getName() const { return m_name; }     
 private:    
     char* m_name; 
     int m_attackStat; 
-}; 
- 
+};  
 class Item 
 { 
    public:    

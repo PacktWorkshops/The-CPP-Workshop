@@ -11,4 +11,4 @@ int main()
 {
     noisy* p = new noisy;
     delete[] p;
-
+}

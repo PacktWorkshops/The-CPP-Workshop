@@ -1,4 +1,4 @@
-// Do ... while loop.
+// do ... while loop.
 #include <iostream>
 #include <string>
 

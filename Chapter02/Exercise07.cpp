@@ -15,11 +15,6 @@ int main()
     number = std::stoi(input);
         switch (number)
          {
-             case 1:
-             std::cout << "Fries: $0.99\n";
-             break;
-             switch (number)
-               {
                  case 1:
                  std::cout << "Fries: $0.99\n";
                  break;
@@ -35,7 +30,6 @@ int main()
                  default:
                  std::cout << "Invalid choice.";
                  break;
-               }
           }
 }
 

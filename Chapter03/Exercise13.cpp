@@ -10,3 +10,4 @@ int main()
    std::cout << "The size of a char is " << sizeof(myChar) << ".\n";
    return 0;
 }
+

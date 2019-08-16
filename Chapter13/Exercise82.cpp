@@ -13,6 +13,10 @@ try
 {
 deeply_nested();
 }
+catch (exception& e)
+{
+cout << "caught " << e.what() << endl;
+}
 catch (...)
 {
 cout << "in catch ..." << endl;

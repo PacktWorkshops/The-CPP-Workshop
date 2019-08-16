@@ -4,7 +4,7 @@
 #define NAME_COUNT 5
 int main()
 {
-   std::string names[NAME_COUNT][2] {""};
+   std::string names[NAME_COUNT][2];
    std::cout << "Please input usernames." << std::endl;
    for (int i = 0; i < NAME_COUNT; ++i)
      {

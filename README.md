@@ -1,1 +1,2 @@
-# The-Cpp-Workshop
+# The C++ Workshop
+##A practical, no-nonsense guide to C++##

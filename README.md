@@ -5,6 +5,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/TrainingByPackt/Data-Science-Projects-with-Python/pulls)
 
 # The C++ Workshop
+
+## A practical, no-nonsense guide to C++ ##
+
 *The C++ Workshop*  succinctly covers C++ features and techniques with the help of engaging examples. You'll begin by writing the famous “Hello world” program, and learn how to build more complex non-sequential programs. The book will take you through core Object-oriented Programming (OOP) principles and the use of accessibility modifiers to ensure that only the data and functionality you allow can be accessed by other classes. You'll even get to grips with using smart pointers to manage dynamic variables automatically. As you advance, you’ll be able to improve application performance and control the flow of your program with exception handling. Finally, you'll see how templates, containers, and strings can help you work with data efficiently.
 Whether using stacks to sort a queue or using strings to alter text, this book teaches you everything you need to get started with writing C++ programs and exploring the advanced concepts of this language.
 

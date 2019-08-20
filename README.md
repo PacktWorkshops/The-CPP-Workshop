@@ -22,12 +22,6 @@ The C++ Workshop by **Dale Green,** **Kurt Guntheroth,** **and Shaun Ross Mitche
 * Read and review C++ code, make point changes, and write simple tests
 * Use built-in data types, int, double, char, bool, and float, in your programs
 
-### Hardware requirements
-For an optimal student experience, we recommend the following hardware configuration:
-* **Processor**: Intel Core i5 or equivalent
-* **Memory**: 4 GB RAM or higher
-* **Storage**: 35 Gb or higher
-
 ### Software requirements
 * OS: Windows 7 SP1 64-bit, Windows 8.1 64-bit or Windows 10 64-bit
 * Browser: Google Chrome/Mozilla Firefox Latest Version

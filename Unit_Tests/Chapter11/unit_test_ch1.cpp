@@ -1,147 +1,129 @@
-Chapter 1 : Exercise 1
+Chapter 11 : Exercise 1 
+ 
+#include "pch.h"
+#include <iostream>
+#include <memory>
+#include <typeinfo>
+#include "gtest/gtest.h"
+using namespace std;
+
+std::ostringstream out; 
+template<typename T, typename U>
+class Position
+{
+public:
+
+   Position(T x, T y, U zRot)
+   {
+      m_x = x;
+      m_y = y;
+      m_zRotation = zRot;
+   }
+
+   T const getX() { return m_x; }
+   T const getY() { return m_y; }
+   U const getZRotation() { return m_zRotation; }
+
+private:
+
+   T m_x;
+   T m_y;
+
+   U m_zRotation;
+};
+
+std::string TestCase() {
+   Position<int, float> intPosition(1, 3, 80.0f);
+   Position<float, int> floatPosition(1.0f, 3.0f, 80);
+   Position<long, float> longPosition(1.0, 3.0, 80.0f);
+
+   out << "type: " << typeid(intPosition.getX()).name() << " X: " << intPosition.getX() << " Y: " << intPosition.getY() << endl;
+   out << "type: " << typeid(floatPosition.getX()).name() << " X: " << floatPosition.getX() << " Y: " << floatPosition.getY() << endl;
+   out << "type: " << typeid(longPosition.getX()).name() << " X: " << longPosition.getX() << " Y: " << longPosition.getY() << endl;
+
+   out << "type: " << typeid(intPosition.getZRotation()).name() << " Z Rot: " << intPosition.getZRotation() << endl;
+   out << "type: " << typeid(floatPosition.getZRotation()).name() << " Z Rot: " << floatPosition.getZRotation() << endl;
+   out << "type: " << typeid(longPosition.getZRotation()).name() << " Z Rot: " << longPosition.getZRotation() << endl;
+
+   return out.str();
+}
+
+TEST(Chapter11, Exercise1) {
+
+   EXPECT_EQ("type: int X: 1 Y: 3\ntype: float X: 1 Y: 3\ntype: long X: 1 Y: 3\ntype: float Z Rot: 80\ntype: int Z Rot: 80\ntype: float Z Rot: 80\n", TestCase());
+}
+
+int main(int argc, char *argv[])
+{
+   ::testing::InitGoogleTest(&argc, argv);
+
+   return RUN_ALL_TESTS();
+}
+
+Chapter 11 : Exercise 2 
 
 #include "pch.h"
 #include <iostream>
-#include <string>
+#include <memory>
+#include <typeinfo>
 #include "gtest/gtest.h"
+using namespace std;
 
-std::string TestCase () {    
-   std::ostringstream out;
-   out << "Hello World!";
+std::ostringstream out; 
+template<typename T, typename U>
+class Position
+{
+public:
+
+   Position(T x, T y, U zRot)
+   {
+      m_x = x;
+      m_y = y;
+      m_zRotation = zRot;
+   }
+
+   T const getX() { return m_x; }
+   T const getY() { return m_y; }
+   U const getZRotation() { return m_zRotation; }
+
+private:
+
+   T m_x;
+   T m_y;
+
+   U m_zRotation;
+};
+template<typename T>
+T getLargest(T t1, T t2)
+{
+   if (t1 > t2)
+   {
+      return t1;
+   }
+   else
+   {
+      return t2;
+   }
+}
+
+std::string TestCase() {
+   Position<int, float> intPosition(1, 3, 80.0f);
+   Position<float, int> floatPosition(2.0f, 3.0f, 80);
+   Position<long, float> longPosition(5.0, 3.0, 200.0);
+
+   out << "largest is: " << getLargest(intPosition.getX(), intPosition.getY()) << endl;
+   out << "largest is: " << getLargest(floatPosition.getX(), floatPosition.getY()) << endl;
+   out << "largest is: " << getLargest(longPosition.getX(), longPosition.getY()) << endl;
+   out << "largest ZRot is:" << getLargest(intPosition.getZRotation(), longPosition.getZRotation()) << endl;
+
    return out.str();
 }
 
-TEST(Chapter1, Example1) {
+TEST(Chapter11, Exercise2) {
 
-   EXPECT_EQ("Hello World!", TestCase());
+   EXPECT_EQ("largest is: 3\nlargest is: 3\nlargest is: 5\nlargest ZRot is:200\n", TestCase());
 }
 
-int main(int argc, char *argv[])
-{
-   ::testing::InitGoogleTest(&argc, argv);
-   
-   return RUN_ALL_TESTS();
-}
-
-
-Chapter 1 : Exercise 2
-
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-
-#define GRADE_C_THRESHOLD 25
-#define GRADE_B_THRESHOLD 50
-#define GRADE_A_THRESHOLD 75
-
-std::string TestCase (int value) {
-   std::ostringstream out;
-   if (value < GRADE_C_THRESHOLD)
-   {
-      out << "Fail";
-   }
-   else if (value < GRADE_B_THRESHOLD)
-   {
-      out << "Pass: Grade C";
-   }
-   else if (value < GRADE_A_THRESHOLD)
-   {
-      out << "Pass: Grade B";
-   }
-   else
-   {
-      out << "Pass: Grade A";
-   }
-   return out.str();
-}
-
-TEST(Chapter1, Example2) {
-
-   EXPECT_EQ("Fail", TestCase(20));
-   EXPECT_EQ("Pass: Grade C", TestCase(40));
-   EXPECT_EQ("Pass: Grade B", TestCase(60));
-   EXPECT_EQ("Pass: Grade A", TestCase(80));
-}
-
-int main(int argc, char *argv[])
-{
-   ::testing::InitGoogleTest(&argc, argv);
-   
-   return RUN_ALL_TESTS();
-}
-
-
-Chapter 1 : Exercise 4
-
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-
-using namespace std;
-
-int Max(int a, int b)
-{
-   if (a > b)
-   {
-      return a;
-   }
-   else
-   {
-      return b;
-   }
-}
-
-TEST(Chapter1, Exercise4) {
-
-   EXPECT_EQ(10, Max(10, 1));
-   EXPECT_EQ(100, Max(10, 100));
-   EXPECT_EQ(20, Max(10, 20));
-}
-int main(int argc, char *argv[])
-{
-   ::testing::InitGoogleTest(&argc, argv);
-
-   return RUN_ALL_TESTS();
-}
-
-
-Chapter 1 : Activity 
-
-#include <iostream>
-#include <string>
-#include "gtest/gtest.h"
-
-using namespace std;
-
-#define GROUP_1_THRESHOLD 12
-#define GROUP_2_THRESHOLD 28
-
-#define GROUP_1_NAME "Group A"
-#define GROUP_2_NAME "Group B"
-#define GROUP_3_NAME "Group C"
-
-std::string GetGroup(int age)
-{
-   if (age <= GROUP_1_THRESHOLD)
-   {
-      return GROUP_1_NAME;
-   }
-   else if (age <= GROUP_2_THRESHOLD)
-   {
-      return GROUP_2_NAME;
-   }
-   else
-   {
-      return GROUP_3_NAME;
-   }
-}
-
-TEST(Chapter1, Activity) {
-   
-   EXPECT_EQ("Group A", GetGroup(10));
-   EXPECT_EQ("Group B", GetGroup(25));
-   EXPECT_EQ("Group C", GetGroup(34));
-}
 int main(int argc, char *argv[])
 {
    ::testing::InitGoogleTest(&argc, argv);

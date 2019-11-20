@@ -1,26 +1,15 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
-
-class noisy
-{
-    int i_;
-public:
-    noisy(int i) : i_(i)
-    { 
-        cout << "constructing noisy " << i << endl; 
-    }
-   ~noisy() 
-   { 
-       cout << "destroying noisy " << i_ << endl;
-   }
-};
 
 int main()
 {
-    noisy N(1);
-    noisy* p = new noisy(2);
-    delete p;
-
+    char const* cp = "arbitrary null terminated text string";
+    char* buffer = new char[ strlen(cp)+1 ];
+    strcpy(buffer, cp);
+    cout << "buffer = " << buffer << endl;
+    delete[] buffer;
+    
     return 0;
 }
 

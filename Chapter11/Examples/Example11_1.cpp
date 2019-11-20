@@ -1,41 +1,42 @@
-#include <iostream>
-// need the memory header
-#include <memory>
- 
-using namespace std;
- 
-template<class T>   
-class Queue   
-{   
-    public:   
- 
-        Queue() { init(); } 
-        explicit Queue(size_t numElements, const T& initialValue = T()) 
-        {  
-            init(numElements, initialValue); 
-        } 
-        ~Queue() { destroy(); }
- 
-        T* front() { return queueData; }  
-        const T* front() const { return queueData; }  
-         
-        T* back() { return queueDataEnd - 1; }  
-        const T* back() const { return queueDataEnd - 1; }  
-         
-        size_t size() const { return queueDataEnd - queueData; }  
-        bool empty() const { return size() == 0; } 
- 
-    private:  
-     
-        void init() {} 
-        void init(size_t numElements, const T& initialValue) {} 
-        
-        void destroy() {}
-        
-        // the allocator object
-        allocator<T> alloc;
-      
-        T* queueData;  
-        T* queueDataEnd;
-        T* memLimit; // one past the end of allocated memory
-};
+int main()
+{
+    Queue<int> testQueue;
+    testQueue.push(1);
+    testQueue.push(2);
+    cout << "queue contains values: ";
+    for (auto it = testQueue.front(); it != testQueue.back() + 1; ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    cout << "queue contains " << testQueue.size() << " elements" << endl;
+    testQueue.pop();
+    cout << "queue contains values: ";
+    for (auto it = testQueue.front(); it != testQueue.back() + 1; ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    cout << "queue contains " << testQueue.size() << " elements" << endl;
+    testQueue.push(9);
+    testQueue.push(50);
+    cout << "queue contains values: ";
+    for (auto it = testQueue.front(); it != testQueue.back() + 1; ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    cout << "queue contains " << testQueue.size() << " elements" << endl;
+    testQueue.pop();
+    cout << "queue contains values: ";
+    for (auto it = testQueue.front(); it != testQueue.back() + 1; ++it)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+    cout << "Is the Queue empty: " << (testQueue.empty() == 1 ? "YES" : "NO") << endl;
+    cout << "value of first element is: " << *testQueue.front() << endl;
+    cout << "value of last element is: " << *testQueue.back() << endl;
+    return 0;
+}
+

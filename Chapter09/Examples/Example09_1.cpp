@@ -1,8 +1,6 @@
 class Playlist 
-
 { 
-   public: 
-       
+   public:   
        void AddTrack(const Track* track) 
        { 
            if(!any_of(m_tracks.begin(), m_tracks.end(), 

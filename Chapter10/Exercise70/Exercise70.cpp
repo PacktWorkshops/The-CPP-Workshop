@@ -1,5 +1,4 @@
 // Casting example. 
-
 #include <iostream> 
 #include <string> 
 class Shape 

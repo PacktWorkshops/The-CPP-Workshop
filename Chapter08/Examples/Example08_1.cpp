@@ -8,7 +8,8 @@ union Backpack
    struct
    {
        int food, water, key, flashlight;
-   } data;
+   } 
+   data;
 };
 
 void DisplayContents(Backpack& backpack)

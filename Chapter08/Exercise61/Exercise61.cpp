@@ -1,88 +1,62 @@
 #include <iostream>
-
 #include <string>
-
 #include <cstring>
-
 
 using namespace std;
 
 class Track
-
 {
-
   public:
-
     // added additional artist name constructor parameter 
-
-    Track(float lengthInSeconds = 0.0 f, string trackName = "not set", string artistName = "not set",
-      const char * data = NULL)
-
-  {
-
+    Track(float lengthInSeconds = 0.0 f, string trackName = "not set", string artistName = "not set" const char * data = NULL)
+    {
     m_lengthInSeconds = lengthInSeconds;
-
     m_trackName = trackName;
-
     m_artistName = artistName;
-
+      
     // create the sample clip from data 
-
     m_dataSize = strlen(data);
-
     m_data = new char[m_dataSize + 1];
-
     strcpy(m_data, data);
-
   }
-
+  
   ~Track()
-
   {
-
     delete[] m_data;
-
   }
-  Track & operator = (const Track & track) {
-    // check for self assignment
-    if (this != & track) {
-      // these can be shallow copied
-      m_lengthInSeconds = track.m_lengthInSeconds;
-      m_trackName = track.m_trackName;
-      m_artistName = track.m_artistName;
-      m_dataSize = track.m_dataSize;
-      // allocate new memory and copy the existing data from the passed in object
-      char * newData = new char[m_dataSize];
-      strcpy(newData, track.m_data);
-      // since this is an already existing object we must deallocate existing memory
-      delete[] m_data;
-      // assign the new data
-      m_data = newData;
-    }
-    return *this;
-  }
-
-  void SetData(float lengthInSeconds = 0.0 f, string trackName = "not set",
-    const char * newData = NULL)
-
+  Track & operator = (const Track & track) 
   {
-
-    m_lengthInSeconds = lengthInSeconds;
-
-    m_trackName = trackName;
-
-    // delete the array so it can be recreated 
-
-    delete[] m_data;
-
-    // create the sample clip from data 
-
-    m_dataSize = strlen(newData);
-
-    m_data = new char[m_dataSize + 1];
-
-    strcpy(m_data, newData);
-
+      // check for self assignment
+      if (this != & track) 
+      {
+          // these can be shallow copied
+          m_lengthInSeconds = track.m_lengthInSeconds;
+          m_trackName = track.m_trackName;
+          m_artistName = track.m_artistName;
+          m_dataSize = track.m_dataSize;
+          // allocate new memory and copy the existing data from the passed in object
+          char * newData = new char[m_dataSize];
+          strcpy(newData, track.m_data);
+          // since this is an already existing object we must deallocate existing memory
+          delete[] m_data;
+          // assign the new data
+          m_data = newData;
+      }
+      return *this;
+  }
+  
+  void SetData(float lengthInSeconds = 0.0 f, string trackName = "not set" const char * newData = NULL)
+  {
+       m_lengthInSeconds = lengthInSeconds;
+       m_trackName = trackName;
+       
+       // delete the array so it can be recreated 
+       delete[] m_data;
+    
+       // create the sample clip from data 
+       m_dataSize = strlen(newData);
+       m_data = new char[m_dataSize + 1];
+       strcpy(m_data, newData);
   }
 
   // m_ prefix added to member variables, to avoid naming conflicts with parameter names 

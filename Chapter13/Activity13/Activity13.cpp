@@ -56,7 +56,7 @@ int main()
         }
     }
     while (continue_flag == true);
-    cout << "shutting down" << endl;
+    cout << "main() exiting" << endl;
     return 0;
 }
 

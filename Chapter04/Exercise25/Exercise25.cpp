@@ -8,8 +8,10 @@ public:
     Person(int age, std::string name) : age(age), name(name)
     {
     };
+    
     float age = 0;
     std::string name = "";
+    
     bool operator == (Person const& other)
     {
          return ((age == other.age) && (name == other.name));

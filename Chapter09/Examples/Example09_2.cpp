@@ -3,19 +3,20 @@ class Playlist
  public:   
     void AddTrack(const Track* track) 
     { 
-        if(!any_of(m_tracks.begin(), m_tracks.end(), 
-                   [&track](const Track* t){ return t->getName() == track->getName(); })) 
+        if(!any_of(m_tracks.begin(), m_tracks.end(), [&track](const Track* t){ return t->getName() == track->getName(); })) 
         { 
             m_tracks.push_back(track); 
             return;
         } 
         cout << "Track: " << track->getName() << " Not added as already exists in playlist"; 
     } 
+ 
     void RemoveTrack(const string trackName) 
     { 
         m_tracks.erase(remove_if(m_tracks.begin(), m_tracks.end(), 
         [&trackName](const Track* t){ return t->getName() == trackName; })); 
     } 
+ 
     void PrintTracks() const 
     {
         for (auto & track : m_tracks) 

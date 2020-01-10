@@ -40,9 +40,9 @@ T getLargest(T t1, T t2)
 
 int main()
 {
-    Position<int, float> intPosition(1, 3, 80.0f);
-    Position<float, int> floatPosition(2.0f, 3.0f, 80);
-    Position<long, float> longPosition(5.0, 3.0, 200.0);
+    Position<int, float> intPosition(1, 3, 80.5f);
+    Position<float, int> floatPosition(2.5f, 3.14f, 80);
+    Position<long, float> longPosition(5, 3, 200);
     cout << "largest is: " << getLargest(intPosition.getX(), intPosition.
     getY()) << endl;
     cout << "largest is: " << getLargest(floatPosition.getX(),

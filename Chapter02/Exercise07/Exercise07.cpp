@@ -16,17 +16,20 @@ int main()
     
     switch (number)
     {
-        case 1:
-            std::cout << "Fries: $0.99\n";
-            break;
-        case 2:
-             std::cout << "Burger: $1.25\n";
-             break;
-        case 3:
-             std::cout << "Shake: $1.50\n";
-             break;
-        default:
-            std::cout << "Invalid choice.";
-            break;
-          }
+    case 1:
+        std::cout << "Fries: $0.99\n";
+        break;
+            
+    case 2:
+        std::cout << "Burger: $1.25\n";
+        break;
+            
+    case 3:
+        std::cout << "Shake: $1.50\n";
+        break;
+            
+    default:
+        std::cout << "Invalid choice.";
+        break;
+    }
 }

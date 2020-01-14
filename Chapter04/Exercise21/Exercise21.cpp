@@ -18,7 +18,7 @@ int main()
     {
         std::cout << numberToCheck << " is prime.";
         return 0;
-     }
+    }
     
     for (int i = 2; i < numberToCheck; ++i)
     {
@@ -26,7 +26,7 @@ int main()
         {
             std::cout << numberToCheck << " is not prime.";
             return 0;
-         }
+        }
      }
     std::cout << numberToCheck << " is prime.";
 }

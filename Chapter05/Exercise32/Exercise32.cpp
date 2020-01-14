@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
@@ -10,8 +11,8 @@ int main()
     cout << "i = " << i << endl;
     int* ip = &ir;
     *ip = 33;
-    cout << "i = " << i << ", *ip = " << *ip
-         << ", ir = " << ir << endl;
+    
+    cout << "i = " << i << ", *ip = " << *ip << ", ir = " << ir << endl;
     return 0;
 }
 

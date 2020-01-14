@@ -4,9 +4,10 @@
 using namespace std;
 
 template<typename T, typename U>
+
 class Position
- {
- public:
+{
+public:
     Position(T x, T y, U zRot)
     {
         m_x = x;

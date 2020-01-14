@@ -8,7 +8,9 @@ using namespace std;
 class Question 
 {
 public:
-	Question(int questionNumber, string question, int answerIndex) : m_questionNumber(questionNumber), m_question(question), m_answerIndex(answerIndex) {}
+	Question(int questionNumber, string question, int 
+	answerIndex) : m_questionNumber(questionNumber), m_question(question), 
+	m_answerIndex(answerIndex) {}
 	int getQuestionNumber() const 
 	{
 		return m_questionNumber;

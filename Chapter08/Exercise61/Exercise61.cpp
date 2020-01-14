@@ -6,7 +6,7 @@ using namespace std;
 
 class Track
 {
-  public:
+public:
     // added additional artist name constructor parameter 
     Track(float lengthInSeconds = 0.0 f, string trackName = "not set", string artistName = "not set" const char * data = NULL)
     {
@@ -34,11 +34,14 @@ class Track
           m_trackName = track.m_trackName;
           m_artistName = track.m_artistName;
           m_dataSize = track.m_dataSize;
+          
           // allocate new memory and copy the existing data from the passed in object
           char * newData = new char[m_dataSize];
           strcpy(newData, track.m_data);
+          
           // since this is an already existing object we must deallocate existing memory
           delete[] m_data;
+          
           // assign the new data
           m_data = newData;
       }
@@ -60,47 +63,47 @@ class Track
   }
 
   // m_ prefix added to member variables, to avoid naming conflicts with parameter names 
-
   float m_lengthInSeconds;
-
   string m_trackName;
 
   // additional artist name string member variable 
-
   string m_artistName;
 
   // sample clip data 
-
   int m_dataSize;
-
   char * m_data;
-
+    
 };
-void PrintTrackName(Track track) {
-  cout << "Track Name = " << track.m_trackName << endl;
+
+void PrintTrackName(Track track) 
+{
+    cout << "Track Name = " << track.m_trackName << endl;
 }
 
-int main() {
-  Track track(200.0 f, "Still Alive", "GlaDos",
-    "f651270d6011098375db09912b03e5e7");
-  PrintTrackName(track);
-  // construct another track with new values
-  Track track2(300.0 f, "Want You Gone", "GlaDos", "db6fd7d74393b375344010a0c9cc4535");
-  // here the assignment operator is called
-  track2 = track;
+int main() 
+{
+    Track track(200.0 f, "Still Alive", "GlaDos","f651270d6011098375db09912b03e5e7");
+    PrintTrackName(track);
+    
+    // construct another track with new values
+    Track track2(300.0 f, "Want You Gone", "GlaDos", "db6fd7d74393b375344010a0c9cc4535");
+    
+    // here the assignment operator is called
+    track2 = track;
 
-  // set the new needed data
-  track2.SetData(300.0 f, "Want You Gone", "db6fd7d74393b375344010a0c9cc4535");
-  cout << "Track 1" << endl;
-  cout << "Artist = " << track.m_artistName << endl;
-  cout << "Track Name = " << track.m_trackName << endl;
-  cout << "Track Length = " << track.m_lengthInSeconds << endl;
-  cout << "Track Data = " << track.m_data << endl;
-  cout << endl;
-  cout << "Track 2" << endl;
-  cout << "Artist = " << track2.m_artistName << endl;
-  cout << "Track Name = " << track2.m_trackName << endl;
-  cout << "Track Length = " << track2.m_lengthInSeconds << endl;
-  cout << "Track Data = " << track2.m_data << endl;
-  return 0;
+    // set the new needed data
+    track2.SetData(300.0 f, "Want You Gone", "db6fd7d74393b375344010a0c9cc4535");
+    cout << "Track 1" << endl;
+    cout << "Artist = " << track.m_artistName << endl;
+    cout << "Track Name = " << track.m_trackName << endl;
+    cout << "Track Length = " << track.m_lengthInSeconds << endl;
+    cout << "Track Data = " << track.m_data << endl;
+    cout << endl;
+    cout << "Track 2" << endl;
+    cout << "Artist = " << track2.m_artistName << endl;
+    cout << "Track Name = " << track2.m_trackName << endl;
+    cout << "Track Length = " << track2.m_lengthInSeconds << endl;
+    cout << "Track Data = " << track2.m_data << endl;
+  
+    return 0;
 }

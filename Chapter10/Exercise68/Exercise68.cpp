@@ -14,6 +14,7 @@ class Square : public Shape
 {
 public:
     int height = 0;
+    
     int CalculateArea() override
     {
         area = height * height;
@@ -25,11 +26,12 @@ class Circle : public Shape
 {
 public:
      int radius = 0;
+     
      int CalculateArea() override
-   {
-       area = 3.14 * (radius * radius);
-       return area;
-   }
+     {
+         area = 3.14 * (radius * radius);
+         return area;
+     }
 };
 
 int main()

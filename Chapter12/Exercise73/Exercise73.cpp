@@ -20,6 +20,7 @@ int main()
     cout << str4 << endl;
     cout << str5 << endl;
     cout << str6 << endl;
+ 
     return 0;
 }
 

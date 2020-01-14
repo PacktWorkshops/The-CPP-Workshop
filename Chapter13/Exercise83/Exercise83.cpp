@@ -7,9 +7,9 @@ using namespace std;
 class noisy
 {
     char const* s_;
-    public:
+public:
     noisy(char const* s) { cout << "constructing " << (s_ = s) << endl; }
-    ~noisy() { cout << "destroying " << s_ << endl; }
+   ~noisy() { cout << "destroying " << s_ << endl; }
 };
 
 int deeply_nested()
@@ -38,9 +38,10 @@ int main()
     }
     catch (exception& e)
     {
-        cout << "in catch: exception: " << e.what() << endl;\
+        cout << "in catch: exception: " << e.what() << endl;
     }
     
     cout << "ending main" << endl; 
+    
     return 0;
 }

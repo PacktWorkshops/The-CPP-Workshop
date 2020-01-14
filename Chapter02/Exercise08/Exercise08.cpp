@@ -2,8 +2,9 @@
 #include <string>
 
 int main() 
+bool bIsRunning = true;
 {
-    while (true) 
+    while (bIsRunning) 
     {
         std::string input;
         int number;

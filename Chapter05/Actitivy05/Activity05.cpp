@@ -6,8 +6,7 @@ char const* array[26]
 
 int printarray(char const** begin, char const** end, int& count)
 {
-    if (begin == nullptr || end == nullptr || 
-        begin > end || end-begin > 26)
+    if (begin == nullptr || end == nullptr || begin > end || end-begin > 26)
     {
         return 0;
     }

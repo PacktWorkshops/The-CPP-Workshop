@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 struct numeric_item
 {
     int value_;

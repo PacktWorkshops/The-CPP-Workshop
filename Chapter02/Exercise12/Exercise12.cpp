@@ -16,17 +16,16 @@ int main()
     getline(std::cin, input);
     count = std::stoi(input);
     for (int i = 1; i <= 100; ++i)
-      {
-            if (numbersPrinted == count)
-              {
-                break;
-              }
-            if (i % multiple != 0)
-              {
-                continue;
-               }
-             std::cout << i << "\n";
-             ++numbersPrinted;
-       }
- }
-
+    {
+        if (numbersPrinted == count)
+        {
+            break;
+        }
+        if (i % multiple != 0)
+        {
+            continue;
+        }
+        std::cout << i << "\n";
+        ++numbersPrinted;
+    }
+}

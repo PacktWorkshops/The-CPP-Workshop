@@ -10,9 +10,9 @@ public:
         cout << "constructing noisy " << i << endl; 
     }
    ~noisy() 
-   { 
-       cout << "destroying noisy " << i_ << endl;
-   }
+    { 
+        cout << "destroying noisy " << i_ << endl;
+    }
 };
 
 int main()

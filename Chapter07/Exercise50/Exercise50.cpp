@@ -64,10 +64,10 @@ int main()
     }
     l.print();
    
-   numeric_item* p = l.find(4);
-   if (p != nullptr)
-       cout << "found numeric_item 4" << endl;
+    numeric_item* p = l.find(4);
+    if (p != nullptr)
+        cout << "found numeric_item 4" << endl;
    
-   return 0;
+    return 0;
 }
 

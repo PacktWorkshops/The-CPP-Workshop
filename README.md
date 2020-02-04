@@ -10,7 +10,7 @@ This is the repository for [The CPP Workshop](https://www.packtpub.com/programmi
 ## Requirements and Setup
 <a href="https://www.packtpub.com/programming/the-c-workshop"><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/The%20CPP%20Workshop.png" alt="The CPP Workshop" height="270px" width="220px" align="right" this.target="_blank"></a>
 
-To compile the C++ codes, [cpp.sh](http://cpp.sh/) compiler is extensively used in this Workshop. However, you can also use one of the below compilers:
+We use online compilers to compile code in The C++ Workshop. The compiler at [cpp.sh](http://cpp.sh/) is extensively used in this Workshop. However, you can also use one of the following compilers:
 1. [Tutorialspoint C++ compiler](https://www.tutorialspoint.com/compile_cpp_online.php)
 2. [godbolt compiler explorer](https://godbolt.org/)
 3. [coliru](http://coliru.stacked-crooked.com/)

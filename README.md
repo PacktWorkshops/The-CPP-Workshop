@@ -5,13 +5,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/pulls)
 
-This is the repository for [The CPP Workshop](https://www.packtpub.com/data/the-cpp-workshop), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
+This is the repository for [The CPP Workshop](https://www.packtpub.com/programming/the-c-workshop), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
 
 ## Requirements and Setup
-<a href="https://www.packtpub.com/data/the-cpp-workshop"><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/The%20Data%20Science%20Workshop.png" alt="The CPP Workshop" height="270px" width="220px" align="right" this.target="_blank"></a>
+<a href="https://www.packtpub.com/programming/the-c-workshop"><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/The%20CPP%20Workshop.png" alt="The CPP Workshop" height="270px" width="220px" align="right" this.target="_blank"></a>
 
 ## About The CPP Workshop
-You already know you want to learn C++ development, and a smarter way to learn C++ 11 is to learn by doing. [The CPP Workshop](https://www.packtpub.com/data/the-cpp-workshop) focuses on building up your practical skills so that you can develop high-performance software applications or even your own independent games with effective modern C++. You'll learn from real examples that lead to real results.
+You already know you want to learn C++ development, and a smarter way to learn C++ 11 is to learn by doing. [The CPP Workshop](https://www.packtpub.com/programming/the-c-workshop) focuses on building up your practical skills so that you can develop high-performance software applications or even your own independent games with effective modern C++. You'll learn from real examples that lead to real results.
 
 ## What you will learn
 * Get to grips with fundamental concepts and conventions of C++ 11

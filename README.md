@@ -10,6 +10,13 @@ This is the repository for [The CPP Workshop](https://www.packtpub.com/programmi
 ## Requirements and Setup
 <a href="https://www.packtpub.com/programming/the-c-workshop"><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/The%20CPP%20Workshop.png" alt="The CPP Workshop" height="270px" width="220px" align="right" this.target="_blank"></a>
 
+To compile the C++ codes, [cpp.sh](http://cpp.sh/) compiler is extensively used in this Workshop. However, you can also use one of the below compilers:
+1. [Tutorialspoint C++ compiler](https://www.tutorialspoint.com/compile_cpp_online.php)
+2. [godbolt compiler explorer](https://godbolt.org/)
+3. [coliru](http://coliru.stacked-crooked.com/)
+4. [repl.it](https://repl.it/languages/cpp)
+5. [Rextester](https://rextester.com/)
+
 ## About The CPP Workshop
 You already know you want to learn C++ development, and a smarter way to learn C++ 11 is to learn by doing. [The CPP Workshop](https://www.packtpub.com/programming/the-c-workshop) focuses on building up your practical skills so that you can develop high-performance software applications or even your own independent games with effective modern C++. You'll learn from real examples that lead to real results.
 

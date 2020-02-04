@@ -1,28 +1,26 @@
+# The CPP Workshop
 
-[![GitHub issues](https://img.shields.io/github/issues/TrainingByPackt/Data-Science-Projects-with-Python.svg)](https://github.com/TrainingByPackt/Data-Science-Projects-with-Python/issues)
-[![GitHub forks](https://img.shields.io/github/forks/TrainingByPackt/Data-Science-Projects-with-Python.svg)](https://github.com/TrainingByPackt/Data-Science-Projects-with-Python/network)
-[![GitHub stars](https://img.shields.io/github/stars/TrainingByPackt/Data-Science-Projects-with-Python.svg)](https://github.com/TrainingByPackt/Data-Science-Projects-with-Python/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/TrainingByPackt/Data-Science-Projects-with-Python/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/Data-Science-Projects-with-Python/issues)
+[![GitHub forks](https://img.shields.io/github/forks/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/network)
+[![GitHub stars](https://img.shields.io/github/stars/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/pulls)
 
-# The C++ Workshop
+This is the repository for [The CPP Workshop](https://www.packtpub.com/data/the-cpp-workshop), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
 
-## A practical, no-nonsense guide to C++ ##
+## Requirements and Setup
+<a href="https://www.packtpub.com/data/the-cpp-workshop"><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/The%20Data%20Science%20Workshop.png" alt="The CPP Workshop" height="270px" width="220px" align="right" this.target="_blank"></a>
 
-*The C++ Workshop*  succinctly covers C++ features and techniques with the help of engaging examples. You'll begin by writing the famous “Hello world” program, and learn how to build more complex non-sequential programs. The book will take you through core Object-oriented Programming (OOP) principles and the use of accessibility modifiers to ensure that only the data and functionality you allow can be accessed by other classes. You'll even get to grips with using smart pointers to manage dynamic variables automatically. As you advance, you’ll be able to improve application performance and control the flow of your program with exception handling. Finally, you'll see how templates, containers, and strings can help you work with data efficiently.
-Whether using stacks to sort a queue or using strings to alter text, this book teaches you everything you need to get started with writing C++ programs and exploring the advanced concepts of this language.
-
-The C++ Workshop by **Dale Green,** **Kurt Guntheroth,** **and Shaun Ross Mitchel**
+## About The CPP Workshop
+You already know you want to learn C++ development, and a smarter way to learn C++ 11 is to learn by doing. [The CPP Workshop](https://www.packtpub.com/data/the-cpp-workshop) focuses on building up your practical skills so that you can develop high-performance software applications or even your own independent games with effective modern C++. You'll learn from real examples that lead to real results.
 
 ## What you will learn
-* Install the required packages to set up a data science coding environment
-* Write, compile, and run your own C++ applications
-* Discover the purpose and importance of template container classes
-* Use if/then/else statements to construct a simple menu program
-* Apply best practices for writing safe code and avoiding common pitfalls and errors
-* Read and review C++ code, make point changes, and write simple tests
-* Use built-in data types, int, double, char, bool, and float, in your programs
+* Get to grips with fundamental concepts and conventions of C++ 11
+* Learn about best practices for clean code and how to avoid common pitfalls
+* Reuse and reduce common code using the C++ standard library
+* Debug and compile logical errors and handle exceptions in your programs
 
-### Software requirements
-* OS: Windows 7 SP1 64-bit, Windows 8.1 64-bit or Windows 10 64-bit
-* Browser: Google Chrome/Mozilla Firefox Latest Version
-
+## Related Workshops
+If you've found this repository useful, you might want to check out some of our other workshop titles:
+* [The Python Workshop](https://courses.packtpub.com/courses/python?utm_source=github&utm_medium=repository&utm_campaign=9781839218859&utm_term=Python&utm_content=The%20Python%20Workshop)
+* [The Java Workshop](https://courses.packtpub.com/courses/java?utm_source=github&utm_medium=repository&utm_campaign=9781838986698&utm_term=Java&utm_content=The%20Java%20Workshop)
+* [The PHP Workshop](https://courses.packtpub.com/courses/php?utm_source=github&utm_medium=repository&utm_campaign=9781838648916&utm_term=PHP&utm_content=The%20PHP%20Workshop)

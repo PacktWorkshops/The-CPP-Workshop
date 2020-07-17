@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-int main() 
-bool bIsRunning = true;
+int main()
 {
+    bool bIsRunning = true;
     while (bIsRunning) 
     {
         std::string input;

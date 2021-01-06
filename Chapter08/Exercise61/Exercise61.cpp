@@ -8,7 +8,7 @@ class Track
 {
 public:
     // added additional artist name constructor parameter 
-    Track(float lengthInSeconds = 0.0 f, string trackName = "not set", string artistName = "not set" const char * data = NULL)
+    Track(float lengthInSeconds = 0.0f, string trackName = "not set", string artistName = "not set", const char * data = NULL)
     {
     m_lengthInSeconds = lengthInSeconds;
     m_trackName = trackName;

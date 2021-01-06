@@ -48,7 +48,7 @@ public:
       return *this;
   }
   
-  void SetData(float lengthInSeconds = 0.0 f, string trackName = "not set" const char * newData = NULL)
+  void SetData(float lengthInSeconds = 0.0f, string trackName = "not set", const char * newData = NULL)
   {
        m_lengthInSeconds = lengthInSeconds;
        m_trackName = trackName;
@@ -82,17 +82,17 @@ void PrintTrackName(Track track)
 
 int main() 
 {
-    Track track(200.0 f, "Still Alive", "GlaDos","f651270d6011098375db09912b03e5e7");
+    Track track(200.0f, "Still Alive", "GlaDos","f651270d6011098375db09912b03e5e7");
     PrintTrackName(track);
     
     // construct another track with new values
-    Track track2(300.0 f, "Want You Gone", "GlaDos", "db6fd7d74393b375344010a0c9cc4535");
+    Track track2(300.0f, "Want You Gone", "GlaDos", "db6fd7d74393b375344010a0c9cc4535");
     
     // here the assignment operator is called
     track2 = track;
 
     // set the new needed data
-    track2.SetData(300.0 f, "Want You Gone", "db6fd7d74393b375344010a0c9cc4535");
+    track2.SetData(300.0f, "Want You Gone", "db6fd7d74393b375344010a0c9cc4535");
     cout << "Track 1" << endl;
     cout << "Artist = " << track.m_artistName << endl;
     cout << "Track Name = " << track.m_trackName << endl;

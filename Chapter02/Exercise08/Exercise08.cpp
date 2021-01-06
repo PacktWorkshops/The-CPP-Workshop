@@ -2,8 +2,9 @@
 #include <string>
 
 int main() 
-bool bIsRunning = true;
+
 {
+    bool bIsRunning = true;
     while (bIsRunning) 
     {
         std::string input;

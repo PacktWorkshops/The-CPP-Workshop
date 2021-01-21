@@ -1,6 +1,6 @@
 # The C++ Workshop
 
-[![GitHub issues](https://img.shields.io/github/issues/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/Data-Science-Projects-with-Python/issues)
+[![GitHub issues](https://img.shields.io/github/issues/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/issues)
 [![GitHub forks](https://img.shields.io/github/forks/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/network)
 [![GitHub stars](https://img.shields.io/github/stars/PacktWorkshops/The-CPP-Workshop.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/PacktWorkshops/The-CPP-Workshop/pulls)

@@ -14,7 +14,7 @@ class MyClass
 struct MyStruct
  {
     int myInt = 0;
-    int myBool = 0;
+    bool myBool = false;
     std::string GetString()
      {
        return "Hello World!";

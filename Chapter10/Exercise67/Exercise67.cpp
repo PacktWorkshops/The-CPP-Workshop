@@ -9,7 +9,7 @@ class Shape
 private:
     bool hasOutline = false;
 };
-class Square : private Shape
+class Square : public Shape
 {
 public:
   Square()
